@@ -9,5 +9,12 @@
         <p class="content"><%= @blog.content %></p>
         <p class="time"><%= @blog.created_at %></p>
     </div>
+    <div class="newBlog">
+        <%= form_for(@blog) do |f| %>
+            Title: <br/><%= f.text_field :title %><br/>
+            Content: <br/><%= f.text_area :content%><br/>
+            <%= f.submit("Create") %>
+        <% end %>
+    </div>
 </body>
 </html>

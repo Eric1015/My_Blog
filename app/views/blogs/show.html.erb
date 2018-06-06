@@ -8,6 +8,8 @@
         <p class="content"><%= @blog.content %></p>
         <p class="time"><%= @blog.created_at %></p>
         <%= link_to 'Edit', edit_blog_path(@blog.id) %>
+        <%= link_to 'Delete', blog_path(@blog),
+         method: :delete, data: {confirm: 'Are you sure to delete this blog?'} %>
     </div>
     <%= link_to 'Back', '/blogs' %>
 </body>
