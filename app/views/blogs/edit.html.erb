@@ -9,12 +9,15 @@
         <p class="content"><%= @blog.content %></p>
         <p class="time"><%= @blog.created_at %></p>
     </div>
-    <div class="newBlog">
+    <div class="new-blog-form">
         <%= form_for(@blog) do |f| %>
-            Title: <br/><%= f.text_field :title %><br/>
-            Content: <br/><%= f.text_area :content%><br/>
-            <%= f.submit("Create") %>
+            Title: <br/><%= f.text_field :title, class: "title-input" %><br/>
+            Content: <br/><%= f.text_area :content, class: "text-area" %><br/>
+            <%= f.submit "Update", class: "btn btn-success" %>
         <% end %>
     </div>
+    <footer>
+        <%= link_to 'Back', blog_path(@blog), class: "btn btn-primary" %>
+    </footer>
 </body>
 </html>
