@@ -4,14 +4,20 @@
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
 <body>
     <h1>My Blogs</h1>
-    <div class="blog-container">
-        <% @blogs.each do |blog| %>
-            <div class="blog">
-                <p class="title"><%= blog.title %></p>
-                <p class="time"><%= blog.created_at %></p>
-                <%= link_to 'Learn More', blog_path(blog), class: "btn btn-info" %>
-            </div>
-        <% end %>
+    <div class="main">
+        <div class="left-block">
+        </div>
+        <div class="blog-container">
+            <% @blogs.each do |blog| %>
+                <div class="blog">
+                    <p class="title"><%= blog.title %></p>
+                    <p class="time"><%= blog.created_at %></p>
+                    <%= link_to 'Learn More', blog_path(blog), class: "btn btn-info" %>
+                </div>
+            <% end %>
+        </div>
+        <div class="right-block">
+        </div>
     </div>
     <footer>
         <%= link_to 'New Blog', '/blogs/new', class: "btn btn-primary" %>
