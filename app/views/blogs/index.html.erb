@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+    <title>My Blog</title>
+<body>
+    <h1>My Blogs</h1>
+    <% @blogs.each do |blog| %>
+        <p class="title"><%= blog.title %></p>
+        <p class="content"><%= blog.content %></p>
+        <p class="time"><%= blog.created_at %></p>
+    <% end %>
+</body>
+</html>
