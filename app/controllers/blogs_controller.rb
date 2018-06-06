@@ -8,12 +8,17 @@ class BlogsController < ApplicationController
     end
 
     def create
-        @blog = Blog.new(params[:title, :content])
+        @blog = Blog.new(blog_params)
         if @blog.save
-            redirect_to '/blogs'
+            redirect_to blogs_url
         else
             render 'new'
         end
     end
+
+    private
+        def blog_params
+            params.require(:blog).permit(:title, :content)
+        end
     
 end
