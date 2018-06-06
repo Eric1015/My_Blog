@@ -16,6 +16,14 @@ class BlogsController < ApplicationController
         end
     end
 
+    def show
+        @blog = Blog.find(params[:id])
+    end
+
+    def edit
+        @blog = Blog.find(params[:id])
+    end
+
     private
         def blog_params
             params.require(:blog).permit(:title, :content)

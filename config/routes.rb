@@ -4,4 +4,6 @@ Rails.application.routes.draw do
   get 'blogs' => 'blogs#index'
   get 'blogs/new' => 'blogs#new'
   post 'blogs' => 'blogs#create'
+  get 'blogs/:id' => 'blogs#show', as: 'blog'
+  get 'blogs/:id/edit' => 'blogs#edit', as: 'edit_blog'
 end
