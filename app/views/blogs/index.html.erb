@@ -5,9 +5,12 @@
 <body>
     <h1>My Blogs</h1>
     <% @blogs.each do |blog| %>
-        <p class="title"><%= blog.title %></p>
-        <p class="content"><%= blog.content %></p>
-        <p class="time"><%= blog.created_at %></p>
+        <div class="blog">
+            <p class="title"><%= blog.title %></p>
+            <p class="content"><%= blog.content %></p>
+            <p class="time"><%= blog.created_at %></p>
+            <%= link_to 'Learn More', blog_path(blog) %>
+        </div>
     <% end %>
     <%= link_to 'New Blog', '/blogs/new' %>
 </body>
