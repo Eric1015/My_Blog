@@ -8,7 +8,7 @@
 * This project is mainly the daily blog of my life and programming related topics
 
 ## Instruction to go to the website
-* **Warning**: you need to have ruby and ruby on rails installed on your computer to open the website!!
+* **Warning**: you need to have **ruby** and **ruby on rails** installed on your computer to open the website!!
 
 * I want to apologize first for the tedious steps to open the website. I will update whenever more efficient ways are found.
 
