@@ -8,6 +8,7 @@
         <div class="left-block">
         </div>
         <div class="blog-container">
+            <% @blogs = @blogs.reverse %>
             <% @blogs.each do |blog| %>
                 <div class="blog">
                     <p class="title"><%= blog.title %></p>
