@@ -7,6 +7,11 @@ footer {
   margin-top: 15px;
 }
 
+body {
+  background: url("beach.png");
+  background-size: cover;
+}
+
 .main {
   display: flex;
   text-align: center;
@@ -35,6 +40,7 @@ footer {
   display: flex;
   flex-flow: row wrap;
   width: 60%;
+  background: rgba(255, 255, 255, 0.5);
 }
 
 .blog-detail {
