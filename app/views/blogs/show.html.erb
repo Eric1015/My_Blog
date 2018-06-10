@@ -10,7 +10,7 @@
             <p class="content"><%= @blog.content %></p>
             <p class="time"><%= @blog.created_at %></p>
             <%= link_to 'Edit', edit_blog_path(@blog.id), class: "btn btn-primary" %>
-            <%= link_to 'Delete', blog_path(@blog),
+            <%= link_to 'Delete', blog_path(@blog.id),
                 method: :delete, data: {confirm: 'Are you sure to delete this blog?'},
                 class: "btn btn-danger" %>
         </div>

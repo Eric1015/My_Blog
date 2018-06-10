@@ -2,17 +2,27 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+.header{
+    text-align: center;
+    background: lightgrey;
+    padding: 1%;
+    margin: 0;
+}
 h1{
     text-align: center;
 }
-
 footer{
     text-align: center;
     margin-top: 15px;
 }
 body{
-    background: url('beach.png');
+    background: url('water.png');
     background-size: cover;
+}
+.main-container{
+    margin: 0;
+    padding: 3%;
+    background: rgba(255,255,255,0.6);
 }
 .main{
     display: flex;
@@ -38,7 +48,6 @@ body{
     display: flex;
     flex-flow: row wrap;
     width: 60%;
-    background: rgba(255,255,255,0.5);
 }
 .blog-detail{
     margin: 10px auto;
@@ -62,6 +71,10 @@ body{
 }
 .time{
     color: blue;
+}
+.bold-text{
+    font-weight: bold;
+    font-size: 150%;
 }
 
 @media screen and (max-width: 740px){

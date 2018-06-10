@@ -5,6 +5,3 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-
-b1 = Blog.create(title: "My first Blog", content: "This is the first blog of this website. 
-    I will mainly write about my daily life and programming related contents.")
